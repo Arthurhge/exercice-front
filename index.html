@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
+
+  <title>Stylus</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <div id="banner">
+    <h1>Sexy Yoga</h1>
+    <br>
+    <p>Become a sexy yogist</p>
+    <p>Every position is sexy</p>
+    <a href="http://www.meetup.com/Affordable-Yoga-in-Paris/" class="btn btn-primary">JOIN US</a>
+    <br>
+  </div>
+
+  <!-- Features -->
+
+  <div class="bg-orange">
+
+    <div class="container">
+      <div class="card ">
+        <img src="images/sexy.svg" alt="sexy yogist" class="img-icon">
+        <h1>Choisis ton enseignante</h1>
+        <p>Nos enseignantes viennent du monde entier, et t'apprendront le yoga de leur pays</p>
+      </div>
+      <div class="card ">
+        <img src="images/position.svg" alt="sexy yogist" class="img-icon">
+        <h1>Know your basics</h1>
+        <p>Le yoga c'est tout plein de positions pour rendre ta vie facile et très joyeuse.</p>
+      </div>
+      <div class="card ">
+        <img src="images/flexible.svg" alt="sexy yogist" class="img-icon">
+        <h1>Gagne en sexibilité</h1>
+        <p>L'expérience nous prouve qu'avec le yoga, vous gagnerez en flexibilité, et donc en attractivité sexuelle.</p>
+      </div>
+      <div class="card ">
+        <img src="images/lungs.svg" alt="sexy yogist" class="img-icon">
+        <h1>Apprends à respirer</h1>
+        <p>Last but not least, le yoga est une discipline fondamentale pour apprendre à respirer et donc irriguer ton cerveau.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--formulaire-->
+  <div class="form-container">
+    <h1>Get news from sexyyogist!</h1>
+    <p>we will send you tons of sexy yoya positions</p>
+    <form class="form-inline">
+      <input type="email" placeholder='claire@yogist.com' class="form-control">
+      <input type="summit" value="Subscribe" class="btn btn-primary">
+    </form>
+  </div>
+
+  <!-- Map -->
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+  </script>
+
+  <!-- Footer -->
+  <div id="footer">
+    <ul class="list-inline">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+    <p>sexyyogist is a fictive website from LeWagon</p>
+  </div>
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

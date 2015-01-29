@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+#banner {
+  background-position: center;
+  background-image: url(../images/lake-house.jpeg);
+  color: white;
+  padding: 150px 0;
+  background-size: cover;
+  height: 650px;
+}
+
+#banner h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#banner p {
+  font-size: 25px;
+  font-weight: 100;
+}
+=======
+/* code your banner design here */
+>>>>>>> fd3ca87226be0434f844646539d41003c37afb5b
